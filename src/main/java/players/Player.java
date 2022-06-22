@@ -38,4 +38,12 @@ public abstract class Player {
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
+
+    public int getDamageDealt() {
+        return this.weapon.baseDamage;
+    }
+
+    public void takeDamage(int attackDamage) {
+        this.health -= attackDamage;
+    }
 }
