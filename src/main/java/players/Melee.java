@@ -1,6 +1,8 @@
 package players;
 
-public abstract class Melee extends Player{
+import behaviour.IAttack;
+
+public abstract class Melee extends Player implements IAttack {
     public Melee(String name, int health, Weapon weapon) {
         super(name, health, weapon);
     }
@@ -8,4 +10,6 @@ public abstract class Melee extends Player{
     public int meleeStrength(Weapon weapon){
         return weapon.baseDamage * 2;
     }
+
+
 }

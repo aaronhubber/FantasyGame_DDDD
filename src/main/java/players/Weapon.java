@@ -19,5 +19,7 @@ public enum Weapon {
     Weapon(int baseDamage) {
         this.baseDamage = baseDamage;
     }
+
+
 }
 
